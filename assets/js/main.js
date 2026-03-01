@@ -64,16 +64,16 @@ const NINJA_DATA = [
     [0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0], // Fila 39
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], // Fila 40
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]  // Fila 41
-    // ... Continúa rellenando aquí abajo según tu cuadrícula de 30x41
+    // ... Lo dibuje Pixel por Pixle, el Chat y el Gemini no pudiedrón jaja.
 ];
 
 function drawNinja() {
     // Fondo verde para imitar la cuadrícula original
-    ctx.fillStyle = "#48f878";
+    ctx.fillStyle = "#b848f8";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Dibujar cuadrícula de guía (Puntos extra por detalle técnico)
-    ctx.strokeStyle = "rgba(0,0,0,0.1)";
+    ctx.strokeStyle = "rgba(1,1,1,1.1)";
     ctx.lineWidth = 0.5;
     for (let x = 0; x <= canvas.width; x += S) {
         ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
